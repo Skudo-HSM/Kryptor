@@ -18,7 +18,8 @@ Connect the HSM board to Raspberry Pi's SPI0 port, and powere the board either w
 Run the hsm console client app with -m option to see the chip's version and serial number, and to confirm everything is ok.
 You might need to run raspi-config to enable the SPI port first.
 
-The options supported by command line interface:
+## The options supported by command line interface:
+```
   -n --rng X     generate XXX random bytes
   -o --file filename save output to file
   -S --stdout    output results into stdout
@@ -43,8 +44,9 @@ The options supported by command line interface:
   -L --leds x   set user leds status to x
   -z --erase-sym x   wipe the symmetric key x [0-3] with zeroes
   -Z --erase-priv x  wipe the private key x [0-3] with zeroes
+```
 
-Examples of use (in no particular order):
+## Examples of use (in no particular order):
 ```
 # generate new symmetrical key 0
 ./hsm_cli -g 0
